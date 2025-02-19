@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import signupImage from "../assets/images/signup.png";
+import signupImage from "../assets/images/signup2.png";
 const Signup = () => {
   return (
     <div className="bg-base-200 min-h-screen">
       <h1 className="text-5xl font-bold text-center pt-5 mb-5 text-sky-500">
-        Register now!
+        Register Here!
       </h1>
       <div className="hero">
         <div className="hero-content flex-col lg:flex-row-reverse">
@@ -59,7 +59,7 @@ const Signup = () => {
                 </label>
               </div>
               <div className="form-control mt-2">
-                <button className="btn btn-info uppercase text-white">
+                <button className="btn btn-warning uppercase text-white">
                   Register
                 </button>
               </div>

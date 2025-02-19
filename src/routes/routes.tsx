@@ -1,8 +1,10 @@
 import App from "@/App";
 import AdminLayout from "@/components/layout/AdminLayout";
 import About from "@/pages/About";
+import AllProducts from "@/pages/AllProducts";
 import HomePage from "@/pages/Home";
 import Login from "@/pages/Login";
+import MyCart from "@/pages/MyCart";
 import Signup from "@/pages/Register";
 import { createBrowserRouter } from "react-router-dom";
 
@@ -20,12 +22,12 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "contact",
-        element: <About />,
+        path: "myCart",
+        element: <MyCart />,
       },
       {
-        path: "about",
-        element: <About />,
+        path: "allProducts",
+        element: <AllProducts />,
       },
     ],
   },
@@ -34,11 +36,15 @@ const router = createBrowserRouter([
     element: <AdminLayout />,
     children: [
       {
-        path: "create-product",
+        path: "add-product",
         element: <About />,
       },
       {
-        path: "order",
+        path: "products",
+        element: <About />,
+      },
+      {
+        path: "orders",
         element: <About />,
       },
     ],

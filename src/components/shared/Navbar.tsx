@@ -16,18 +16,26 @@ const Navbar = () => {
               <NavLink to="/about">About</NavLink>
             </li>
             <li>
+              <NavLink to="/allProducts">All Products</NavLink>
+            </li>
+            <li>
               <NavLink to="/dashboard">Dashboard</NavLink>
             </li>
             <li>
-              <NavLink to="/contact">Contact</NavLink>
+              <NavLink to="/myCart">My Cart</NavLink>
             </li>
           </ul>
         </div>
         <div className="navbar-end space-x-1">
-          <NavLink to="/login" className="btn rounded-full">
+          <NavLink
+            to="/login"
+            className="btn btn-success rounded-full font-semibold text-gray-300"
+          >
             Login
           </NavLink>
-          <a className="btn btn-warning rounded-full">Logout</a>
+          <a className="btn btn-error rounded-full font-semibold text-gray-500">
+            Logout
+          </a>
         </div>
       </div>
       ;
