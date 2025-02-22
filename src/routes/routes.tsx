@@ -2,6 +2,9 @@ import App from "@/App";
 import AdminLayout from "@/components/layout/AdminLayout";
 import About from "@/pages/About";
 import AllProducts from "@/pages/AllProducts";
+import DashboardPage from "@/pages/dashboard/Dashboard";
+import ManageOrders from "@/pages/dashboard/ManageOrders";
+import ManageProducts from "@/pages/dashboard/ManageProducts/ManageProducts";
 import HomePage from "@/pages/Home";
 import Login from "@/pages/Login";
 import MyCart from "@/pages/MyCart";
@@ -32,20 +35,20 @@ const router = createBrowserRouter([
     ],
   },
   {
-    path: "/dashboard",
+    path: "/admin",
     element: <AdminLayout />,
     children: [
       {
-        path: "add-product",
-        element: <About />,
+        path: "dashboard",
+        element: <DashboardPage />,
       },
       {
-        path: "products",
-        element: <About />,
+        path: "manage-products",
+        element: <ManageProducts />,
       },
       {
-        path: "orders",
-        element: <About />,
+        path: "manage-orders",
+        element: <ManageOrders />,
       },
     ],
   },
