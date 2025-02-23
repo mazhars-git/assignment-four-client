@@ -15,11 +15,15 @@ const FeaturedProducts = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
+            <div className="card-title justify-between">
+              <h2>Shoes!</h2>
+              <h2>
+                Price: <span className="text-red-500">$16</span>
+              </h2>
+            </div>
             <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-between">
-              <button className="btn btn-outline">Learn More</button>
-              <button className="btn btn-warning">Buy Now</button>
+            <div className="card-actions justify-center">
+              <button className="btn btn-outline">View Details</button>
             </div>
           </div>
         </div>
@@ -31,11 +35,15 @@ const FeaturedProducts = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
+            <div className="card-title justify-between">
+              <h2>Shoes!</h2>
+              <h2>
+                Price: <span className="text-red-500">$16</span>
+              </h2>
+            </div>
             <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-between">
-              <button className="btn btn-outline">Learn More</button>
-              <button className="btn btn-warning">Buy Now</button>
+            <div className="card-actions justify-center">
+              <button className="btn btn-outline">View Details</button>
             </div>
           </div>
         </div>
@@ -47,11 +55,15 @@ const FeaturedProducts = () => {
             />
           </figure>
           <div className="card-body">
-            <h2 className="card-title">Shoes!</h2>
+            <div className="card-title justify-between">
+              <h2>Shoes!</h2>
+              <h2>
+                Price: <span className="text-red-500">$16</span>
+              </h2>
+            </div>
             <p>If a dog chews shoes whose shoes does he choose?</p>
-            <div className="card-actions justify-between">
-              <button className="btn btn-outline">Learn More</button>
-              <button className="btn btn-warning">Buy Now</button>
+            <div className="card-actions justify-center">
+              <button className="btn btn-outline">View Details</button>
             </div>
           </div>
         </div>
