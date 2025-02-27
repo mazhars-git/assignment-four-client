@@ -1,14 +1,12 @@
 import { configureStore } from "@reduxjs/toolkit";
-import { quizApi } from "./api/quiz/quizApi";
-import { quizSlice } from "./features/quizSlice";
+import { baseApi } from "../api/baseApi";
 
 export const store = configureStore({
   reducer: {
-    quiz: quizSlice.reducer,
-    [quizApi.reducerPath]: quizApi.reducer,
+    [baseApi.reducerPath]: baseApi.reducer,
   },
   middleware: (getDefaultMiddleware) => {
-    return getDefaultMiddleware().concat(quizApi.middleware);
+    return getDefaultMiddleware().concat(baseApi.middleware);
   },
 });
 
